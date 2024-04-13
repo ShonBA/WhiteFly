@@ -8,7 +8,7 @@ export function Gallery(props: PersonProps): JSX.Element {
         <div className="Gallery">
             <h2>גלריה</h2>
             <div className="cardsContainer">
-                {props.person?.gallery.map((g, index) => <GalleryCard key={index} image={g.albumImageUrl} text={g.description} />)}
+                {props.person?.gallery.map((g, index) => <GalleryCard key={index} imageUrl={g.albumImageUrl} text={g.description} />)}
             </div>
             <button className="basic-btn">לכל התמונות והאלבומים</button>
         </div>

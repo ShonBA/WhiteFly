@@ -11,7 +11,7 @@ export function ProjectsCard(props: ProjectsCardProps): JSX.Element {
             <div>
                 <img src={props.project?.imageUrl} />
                 <hr />
-                <h3>{props.project.title}</h3>
+                <h3>{props.project?.title}</h3>
                 <p>{props.project?.description}</p>
                 <FaChevronDown />
             </div>

@@ -41,9 +41,9 @@ const ObituarySchema = new Schema({
         required: [true, "Missing Obituary Image."],
     }
 }, {
-    versionKey: false, // Don't add a __v field.
-    toJSON: { virtuals: true }, // Convert to JSON virtual fields if exists.
-    id: false // Don't duplicate _id field to another id field.
+    versionKey: false,
+    toJSON: { virtuals: true },
+    id: false
 });
 
 
@@ -73,9 +73,9 @@ const ProjectSchema = new Schema({
         trim: true,
     }
 }, {
-    versionKey: false, // Don't add a __v field.
-    toJSON: { virtuals: true }, // Convert to JSON virtual fields if exists.
-    id: false // Don't duplicate _id field to another id field.
+    versionKey: false,
+    toJSON: { virtuals: true },
+    id: false
 });
 
 
@@ -102,9 +102,9 @@ const GallerySchema = new Schema({
         required: [true, "Missing Gallery Image."],
     }
 }, {
-    versionKey: false, // Don't add a __v field.
-    toJSON: { virtuals: true }, // Convert to JSON virtual fields if exists.
-    id: false // Don't duplicate _id field to another id field.
+    versionKey: false,
+    toJSON: { virtuals: true },
+    id: false
 });
 
 
@@ -135,9 +135,9 @@ const TimeLineSchema = new Schema<ITimeLineModel>({
         trim: true,
     }
 }, {
-    versionKey: false, // Don't add a __v field.
-    toJSON: { virtuals: true }, // Convert to JSON virtual fields if exists.
-    id: false // Don't duplicate _id field to another id field.
+    versionKey: false,
+    toJSON: { virtuals: true },
+    id: false
 });
 
 export interface ILifeStoryModel {
@@ -159,9 +159,9 @@ const LifeStoriesSchema = new Schema<ILifeStoryModel>({
     },
     timeLines: [TimeLineSchema]
 }, {
-    versionKey: false, // Don't add a __v field.
-    toJSON: { virtuals: true }, // Convert to JSON virtual fields if exists.
-    id: false // Don't duplicate _id field to another id field.
+    versionKey: false,
+    toJSON: { virtuals: true },
+    id: false
 });
 
 
@@ -233,9 +233,9 @@ export const PersonSchema = new Schema<IPersonModel>({
     obituaries: [ObituarySchema],
     projects: [ProjectSchema]
 }, {
-    versionKey: false, // Don't add a __v field.
-    toJSON: { virtuals: true }, // Convert to JSON virtual fields if exists.
-    id: false // Don't duplicate _id field to another id field.
+    versionKey: false,
+    toJSON: { virtuals: true },
+    id: false
 });
 
 export const PersonModel = model<IPersonModel>("PersonModel", PersonSchema, "persons")

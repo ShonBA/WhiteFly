@@ -1,14 +1,14 @@
 import "./GalleryCard.scss";
 
 interface GalleryCardProps {
-    image: string;
+    imageUrl: string;
     text: string;
 }
 export function GalleryCard(props: GalleryCardProps): JSX.Element {
     return (
         <div className="GalleryCard">
             <div>
-                <img src={props.image} />
+                <img src={props.imageUrl} />
                 <hr />
                 <p>{props.text}</p>
             </div>

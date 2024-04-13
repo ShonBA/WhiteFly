@@ -3,6 +3,7 @@ import { ProjectsCard } from "../../Common/ProjectsCard/ProjectsCard";
 import "./Projects.scss";
 
 export function Projects(props: PersonProps): JSX.Element {
+console.log(props.person.projects);
 
     return (
         <div className="Projects">
