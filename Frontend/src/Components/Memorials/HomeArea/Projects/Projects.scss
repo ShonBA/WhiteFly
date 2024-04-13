@@ -1,4 +1,4 @@
-.AfterLife {
+.Projects {
     background-color: var(--bg);
     display: flex;
     flex-direction: column;
@@ -6,13 +6,13 @@
     gap: 3vh;
     padding: 5vh 0;
 
-    .afterLifeHeader {
+    .projectsHeader {
         h5 {
             font-weight: normal;
         }
     }
 
-    .afterLifeCardContainer {
+    .projectsCardContainer {
         display: flex;
         justify-content: center;
         align-items: center;

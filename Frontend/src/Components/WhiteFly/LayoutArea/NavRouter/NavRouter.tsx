@@ -8,8 +8,8 @@ export function NavRouter(): JSX.Element {
     return (
         <div className="NavRouter">
             <Routes>
-                <Route path={appConfig.HomeRoute} element={<Navbar />}></Route>
-                <Route path={appConfig.RememberRoute} element={<RememberNavbar />}></Route>
+                <Route path={"*"} element={<Navbar />}></Route>
+                <Route path={appConfig.rememberRoute + ":_id*"} element={<RememberNavbar />}></Route>
             </Routes>
         </div>
     );

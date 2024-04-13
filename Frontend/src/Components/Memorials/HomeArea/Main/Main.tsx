@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import personData from "../../../../Assets/JSON/data.json";
 import { Person } from "../../../../Models/Person";
 import { ContactUsForm } from "../../Common/ContactUsForm/ContactUsForm";
-import { AfterLife } from "../AfterLife/AfterLife";
+import { Projects } from "../Projects/Projects";
 import { Gallery } from "../Gallery/Gallery";
 import { Home } from "../Home/Home";
 import { LifeStory } from "../LifeStory/LifeStory";
@@ -31,7 +31,7 @@ export function Main(): JSX.Element {
             <Gallery person={fePerson} />
             <Obituaries person={fePerson} />
             <PrayOrder person={fePerson} />
-            <AfterLife person={fePerson} />
+            <Projects person={fePerson} />
             <PrayOrder person={fePerson} />
             <ContactUsForm />
         </div>

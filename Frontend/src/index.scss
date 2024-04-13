@@ -21,6 +21,14 @@ html,
     border-radius: 50px;
     font-size: large;
   }
+
+  a {
+    font-weight: normal;
+  }
+
+  a.active {
+    font-weight: bold;
+  }
 }
 
 @font-face {

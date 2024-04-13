@@ -1,23 +1,26 @@
+import { NavLink } from "react-router-dom";
 import logo from "../../../../Assets/Images/Common/black-logo.png";
 import "./Navbar.scss";
+import { appConfig } from "../../../../Utils/AppConfig";
 
 export function Navbar(): JSX.Element {
     return (
         <div className="Navbar">
             <div className="navLogoContainer">
-                <img src={logo} alt="logo" />
+                <NavLink to={appConfig.homeRoute}>
+                    <img src={logo} alt="logo" />
+                </NavLink>
             </div>
             <div className="navLinkContainer">
-                <a href="">סיפור חיי</a>
-                <a href="">גלריה</a>
-                <a href="">הספדים</a>
-                <a href="">החיים שאחרי</a>
-                <a href="">ספר לאזכרה</a>
-                <a href="">תהילים לעילוי נשמת</a>
+                <NavLink to={appConfig.homeRoute}>אודות</NavLink>
+                <NavLink to={appConfig.rememberPagesRoute}>עמודי הנצחה</NavLink>
+                <NavLink to={appConfig.ourServicesRoute}>השירות שלנו</NavLink>
+                <NavLink to={appConfig.ourProductsRoute}>המוצרים שלנו</NavLink>
+                <NavLink to={appConfig.contactUsRoute}>צור קשר</NavLink>
             </div>
             <div className="authLinkContainer">
-                <a href="">התחברות</a>
-                <a href="" className="joinBtn">להצטרפות</a>
+                <NavLink to={appConfig.loginRoute}>התחברות</NavLink>
+                <NavLink to={appConfig.registerRoute} className="joinBtn">להצטרפות</NavLink>
             </div>
         </div>
     );

@@ -9,13 +9,13 @@ export function Router(): JSX.Element {
     return (
         <div className="Router">
             <Routes>
-                <Route path={appConfig.HomeRoute} element={<Main />}></Route>
+                <Route path={appConfig.homeRoute} element={<Main />}></Route>
                 {/* <Route path={appConfig.RememberRoute} element={<Remember />}></Route> */}
 
-                <Route path={appConfig.RememberRoute + ":_id"} element={<Remember />}></Route>
+                <Route path={appConfig.rememberRoute + ":_id"} element={<Remember />}></Route>
 
                 {/* Default Routes */}
-                <Route path="/" element={<Navigate to={appConfig.HomeRoute} />} />
+                <Route path="/" element={<Navigate to={appConfig.homeRoute} />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </div>
