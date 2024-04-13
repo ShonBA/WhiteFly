@@ -1,0 +1,15 @@
+.MemorialPageHeader {
+    .headerBg{
+        height: 75px;
+        background-color: var(--dark-bg);
+    }
+    .searchContainer {
+        margin: 5vh;
+
+        input {
+            border-radius: 25px;
+            width: 50vh;
+            height: 5vh;
+        }
+    }
+}

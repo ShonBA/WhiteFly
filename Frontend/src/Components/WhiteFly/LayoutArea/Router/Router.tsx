@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { appConfig } from "../../../../Utils/AppConfig";
 import { Main as Remember } from "../../../Memorials/HomeArea/Main/Main";
 import { Main } from "../../HomeArea/Main/Main";
+import { MemorialPageList } from "../../PagesArea/MemorialsPages/MemorialPageList/MemorialPageList";
 import { PageNotFound } from "../PageNotFound/PageNotFound";
 import "./Router.scss";
 
@@ -10,7 +11,7 @@ export function Router(): JSX.Element {
         <div className="Router">
             <Routes>
                 <Route path={appConfig.homeRoute} element={<Main />}></Route>
-                {/* <Route path={appConfig.RememberRoute} element={<Remember />}></Route> */}
+                <Route path={appConfig.rememberPagesRoute} element={<MemorialPageList />}></Route>
 
                 <Route path={appConfig.rememberRoute + ":_id"} element={<Remember />}></Route>
 

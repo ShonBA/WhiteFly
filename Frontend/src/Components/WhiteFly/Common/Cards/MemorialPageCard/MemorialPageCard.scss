@@ -1,0 +1,19 @@
+.MemorialPageCard {
+    width: 250px;
+    height: 400px;
+
+    a {
+        text-decoration: none;
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 25px;
+        }
+
+        h4,
+        p {
+            margin: 0;
+        }
+    }
+}

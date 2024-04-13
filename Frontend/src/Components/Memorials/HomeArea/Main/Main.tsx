@@ -11,6 +11,7 @@ import { PrayOrder } from "../PrayOrder/PrayOrder";
 import "./Main.scss";
 import { useEffect, useState } from "react";
 import { personService } from "../../../../Services/PersonService";
+import { PrayOrderStatic } from "../PrayOrderStatic/PrayOrderStatic";
 
 export function Main(): JSX.Element {
     const params = useParams();
@@ -32,7 +33,7 @@ export function Main(): JSX.Element {
             <Obituaries person={fePerson} />
             <PrayOrder person={fePerson} />
             <Projects person={fePerson} />
-            <PrayOrder person={fePerson} />
+            <PrayOrderStatic />
             <ContactUsForm />
         </div>
     );

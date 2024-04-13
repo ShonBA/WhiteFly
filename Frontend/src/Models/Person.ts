@@ -4,6 +4,7 @@ import { Obituary } from "./Obituaries"
 import { Project } from "./Project"
 
 export interface Person {
+    _id: string
     firstName: string
     secName: string
     lastName: string

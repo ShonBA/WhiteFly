@@ -1,4 +1,4 @@
-.PrayOrder {
+.PrayOrderStatic {
     min-height: 60vh;
     padding: 10vh;
     background-image: url("../../../../Assets/Images/Common/fabric-bg.jpg");
@@ -8,13 +8,14 @@
 
     .container {
         text-align: start;
-        width: 70%;
+        width: 55%;
     }
 
     img {
         position: absolute;
-        height: 400px;
-        top: 150px;
-        left: 100px;
+        height: 80vh;
+
+        top: 0px;
+        left: 0px;
     }
 }
