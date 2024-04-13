@@ -9,7 +9,7 @@ export function NavRouter(): JSX.Element {
         <div className="NavRouter">
             <Routes>
                 <Route path={"*"} element={<Navbar />}></Route>
-                <Route path={appConfig.rememberRoute + ":_id*"} element={<RememberNavbar />}></Route>
+                <Route path={appConfig.rememberRoute + ":_id/*"} element={<RememberNavbar />}></Route>
             </Routes>
         </div>
     );

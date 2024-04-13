@@ -6,9 +6,15 @@
     justify-content: center;
     gap: 1.5vh;
 
+
     .socialIconsContainer {
+
+        hr {
+            width: 30%;
+        }
+
         svg {
-            margin: 0 1vh;
+            margin: 3vh 1vh;
         }
     }
 

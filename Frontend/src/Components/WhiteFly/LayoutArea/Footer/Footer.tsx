@@ -6,8 +6,8 @@ import "./Footer.scss";
 export function Footer(): JSX.Element {
     return (
         <div className="Footer">
-
             <div className="socialIconsContainer">
+                <hr />
                 <FaInstagram size={"24px"} />
                 <FaFacebookF size={"24px"} />
                 <FaWhatsapp size={"24px"} />

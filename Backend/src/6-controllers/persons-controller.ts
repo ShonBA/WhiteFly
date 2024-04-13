@@ -15,6 +15,7 @@ router.get("/persons", async (request: Request, response: Response, next: NextFu
         next(err);
     }
 });
+
 // GET http://localhost:4000/api/persons/_id
 router.get("/persons/:_id", async (request: Request, response: Response, next: NextFunction) => {
     try {
@@ -26,6 +27,7 @@ router.get("/persons/:_id", async (request: Request, response: Response, next: N
         next(err);
     }
 });
+
 // POST http://localhost:4000/api/persons
 router.post("/persons", async (request: Request, response: Response, next: NextFunction) => {
     try {

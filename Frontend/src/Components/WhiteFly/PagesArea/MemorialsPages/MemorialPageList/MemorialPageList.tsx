@@ -19,7 +19,7 @@ export function MemorialPageList(): JSX.Element {
         <div className="MemorialPageList">
             <MemorialPageHeader />
             <div className="memorialsListContainer">
-                {feMemorials.map(m => <MemorialPageCard person={m} />)}
+                {feMemorials.map(m => <MemorialPageCard key={m._id} person={m} />)}
             </div>
         </div>
     );
