@@ -1,50 +1,14 @@
-import { DetailCard } from "../../Common/DetailCard/DetailCard";
-import image1 from "../../../../Assets/Images/Memorials/pepole-image1.jpg";
-import image2 from "../../../../Assets/Images/Memorials/pepole-image2.jpg";
-import image3 from "../../../../Assets/Images/Memorials/pepole-image3.jpg";
-import image4 from "../../../../Assets/Images/Memorials/pepole-image4.jpg";
+import { PersonProps } from "../../../../Models/PersonProps";
+import { DetailCard } from "../../Common/ObituaryCard/ObituaryCard";
 import "./Obituaries.scss";
 
-export function Obituaries(): JSX.Element {
-    const data = [
-        {
-            id: 1,
-            image: image1,
-            name: "אבי שם משפחה",
-            relation: "נכד של הנפטרת",
-            header: "כותרת ההספד",
-            description: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף...",
-        },
-        {
-            id: 2,
-            image: image2,
-            name: "ישראל ישראלי",
-            relation: "אחיין",
-            header: "כותרת ההספד",
-            description: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף...",
-        },
-        {
-            id: 3,
-            image: image3,
-            name: "מישהו פלוני",
-            relation: "בן דוד אחיין",
-            header: "כותרת ההספד",
-            description: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף...",
-        },
-        {
-            id: 4,
-            image: image4,
-            name: "אבי שם משפחה",
-            relation: "נכדה של הנפטרת",
-            header: "כותרת ההספד",
-            description: "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף...",
-        }
-    ]
+export function Obituaries(props:PersonProps): JSX.Element {
+
     return (
         <div className="Obituaries">
             <h1>הספדים</h1>
             <div className="detailCardContainer">
-                {data.map(d => <DetailCard key={d.id} card={d} />)}
+                {props.person?.obituaries.map((o,index) => <DetailCard key={index} card={o} />)}
             </div>
             <button className="basic-btn">לכל התמונות והאלבומים</button>
         </div>

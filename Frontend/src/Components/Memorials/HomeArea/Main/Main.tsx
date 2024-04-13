@@ -24,18 +24,15 @@ export function Main(): JSX.Element {
             .catch(err => console.log(err))
     }, [])
 
-    console.log(fePerson);
-    
-
     return (
         <div className="Main">
             <Home person={fePerson} />
             <LifeStory person={fePerson} />
-            <Gallery />
-            <Obituaries />
-            <PrayOrder />
-            <AfterLife />
-            <PrayOrder />
+            <Gallery person={fePerson} />
+            <Obituaries person={fePerson} />
+            <PrayOrder person={fePerson} />
+            <AfterLife person={fePerson} />
+            <PrayOrder person={fePerson} />
             <ContactUsForm />
         </div>
     );
