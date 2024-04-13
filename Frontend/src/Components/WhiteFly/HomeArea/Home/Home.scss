@@ -1,0 +1,30 @@
+.Home {
+    background-image: url("../../../../Assets/Images/WhiteFly/white-fly-home-bg.png");
+    background-size: cover;
+
+    .homeContainer {
+        height: 100vh;
+        display: flex;
+        align-items: end;
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+
+        .textContainer {
+            width: 30%;
+            padding: 15vh;
+
+            .basic-btn {
+                background-color: var(--white) !important;
+                border: 1px var(--white);
+            }
+        }
+
+        .imageContainer {
+            width: 100%;
+            position: absolute;
+            bottom: -30px;
+        }
+
+    }
+}

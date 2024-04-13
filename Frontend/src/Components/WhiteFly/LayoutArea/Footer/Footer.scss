@@ -1,0 +1,33 @@
+.Footer {
+    height: 350px;
+    background-color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5vh;
+
+    .socialIconsContainer {
+        svg {
+            margin: 0 1vh;
+        }
+    }
+
+    .iconContainer {
+        img {
+            width: 240px;
+        }
+    }
+
+    .detailsContainer {
+        span {
+            margin: 0 1.5vh;
+            font-size: 24px;
+        }
+    }
+
+    .cpContainer {
+        span {
+            font-size: 24px;
+        }
+    }
+}

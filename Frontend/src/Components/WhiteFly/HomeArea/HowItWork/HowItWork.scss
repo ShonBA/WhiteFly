@@ -1,0 +1,17 @@
+.HowItWork {
+    padding: 0 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vh;
+    background-color: var(--bg);
+    text-align: start;
+
+    .textContainer {
+        ol {
+            li {
+                margin: 2vh 0;
+            }
+        }
+    }
+}

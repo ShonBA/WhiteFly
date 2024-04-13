@@ -1,0 +1,17 @@
+.Layout {
+    display: grid;
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    footer {
+        height: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+.Advantages {
+    display: flex;
+    padding: 0 10vh;
+    background-color: var(--dark-bg);
+
+    .advantagesContainer {
+        width: 60%;
+
+        ol {
+            li {
+                margin: 2vh 0;
+            }
+        }
+    }
+}

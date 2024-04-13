@@ -1,0 +1,29 @@
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: Rubik;
+
+  --black: black;
+  --white: white;
+  --bg: #F4EDE6;
+  --dark-bg: #E9DBCE;
+  --btn: #393E46;
+
+  .basic-btn {
+    background-color: transparent;
+    padding: 1vh 2vh;
+    border-radius: 50px;
+    font-size: large;
+  }
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./Assets/Fonts/RUBIK-VARIABLEFONT_WGHT.TTF");
+}

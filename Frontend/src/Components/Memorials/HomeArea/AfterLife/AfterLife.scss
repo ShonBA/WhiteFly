@@ -1,0 +1,21 @@
+.AfterLife {
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+    padding: 5vh 0;
+
+    .afterLifeHeader {
+        h5 {
+            font-weight: normal;
+        }
+    }
+
+    .afterLifeCardContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+    }
+}

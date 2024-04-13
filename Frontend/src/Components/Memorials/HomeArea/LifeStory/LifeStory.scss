@@ -1,0 +1,21 @@
+.LifeStory {
+    background-color: var(--bg);
+    padding: 15vh 10vh;
+    display: flex;
+    gap: 15vh;
+
+
+    .lifeStoryPara {
+        text-align: start;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .lifeStoryImage {
+        img {
+            height: 400px;
+        }
+    }
+}

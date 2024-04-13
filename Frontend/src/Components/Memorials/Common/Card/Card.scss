@@ -1,0 +1,24 @@
+.Card {
+    width: 250px;
+    background-color: var(--white);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    img {
+        height: 250px;
+        border-radius: 25px 25px 0px 0px;
+        width: 250px;
+    }
+
+    p {
+        padding: 0 3vh;
+    }
+
+    svg {
+        padding: 2vh 0;
+    }
+
+    hr {
+        width: 30%;
+    }
+}

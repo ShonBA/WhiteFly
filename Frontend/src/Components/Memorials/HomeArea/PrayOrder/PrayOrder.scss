@@ -1,0 +1,19 @@
+.PrayOrder {
+    padding: 10vh;
+    background-image: url("../../../../Assets/Images/Common/fabric-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        text-align: start;
+        width: 70%;
+    }
+
+    img {
+        position: absolute;
+        height: 400px;
+        top: 150px;
+        left: 100px;
+    }
+}

@@ -1,0 +1,42 @@
+.Navbar {
+    height: 100%;
+    padding: 2.5vh 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(9, 8, 7, 0.2);
+    font-size: 18px;
+
+
+    .navLinkContainer,
+    .authLinkContainer {
+        display: flex;
+        gap: 2.5vh;
+
+        a {
+            color: var(--black);
+            text-decoration: none;
+            padding: 1vh 2vh;
+
+        }
+
+        a:active {
+            color: var(--black);
+        }
+    }
+
+    .navLogoContainer {
+        img {
+            height: 5vh;
+            scale: 1.5;
+        }
+    }
+
+    .authLinkContainer {
+        .joinBtn {
+            border: 1px solid var(--white);
+            border-radius: 10px;
+            background-color: var(--white);
+        }
+    }
+}

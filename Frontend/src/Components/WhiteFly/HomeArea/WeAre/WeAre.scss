@@ -1,0 +1,23 @@
+.WeAre {
+    padding: 0 10vh;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    background-color: var(--dark-bg);
+
+    .weAreTextContainer {
+        width: 40%;
+    }
+
+    .weAreImageContainer {
+        position: absolute;
+        left: 10vh;
+
+        .smallFly {
+            position: relative;
+            top: -20vh;
+        }
+    }
+}

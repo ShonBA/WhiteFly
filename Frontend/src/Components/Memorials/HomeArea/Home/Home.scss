@@ -1,0 +1,39 @@
+.RememberHome {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.homeHeaders {
+		padding: 0 10vh;
+		height: 90vh;
+		color: var(--white);
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: end;
+
+		h2 {
+			font-size: 64px;
+			margin: 0;
+		}
+
+		p {
+			font-size: 40px;
+			margin: 0;
+		}
+
+		.firstP {
+			margin-bottom: 1vh;
+		}
+
+		h4 {
+			font-size: 40px;
+			margin: 0;
+		}
+
+		img {
+			height: 40px;
+		}
+
+	}
+}

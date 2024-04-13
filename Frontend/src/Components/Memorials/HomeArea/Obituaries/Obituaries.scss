@@ -1,0 +1,15 @@
+.Obituaries {
+    background-color: var(--bg);
+    padding: 5vh 0;
+
+    h1 {
+        margin: 0;
+    }
+
+    .detailCardContainer {
+        display: flex;
+        justify-content: center;
+        gap: 3vh;
+        padding: 5vh 0;
+    }
+}

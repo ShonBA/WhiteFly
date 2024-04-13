@@ -1,0 +1,17 @@
+.Gallery {
+    background-image: url("../../../../Assets/Images/Common/fabric-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 0;
+
+    h2 {
+        margin: 0;
+    }
+
+    .cardsContainer {
+        display: flex;
+        justify-content: center;
+        gap: 3vh;
+        margin: 3vh 0;
+    }
+}
