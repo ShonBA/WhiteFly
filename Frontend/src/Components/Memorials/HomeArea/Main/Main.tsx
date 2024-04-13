@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import personData from "../../../../Assets/JSON/data.json";
 import { Person } from "../../../../Models/Person";
 import { ContactUsForm } from "../../Common/ContactUsForm/ContactUsForm";
@@ -8,15 +9,28 @@ import { LifeStory } from "../LifeStory/LifeStory";
 import { Obituaries } from "../Obituaries/Obituaries";
 import { PrayOrder } from "../PrayOrder/PrayOrder";
 import "./Main.scss";
+import { useEffect, useState } from "react";
+import { personService } from "../../../../Services/PersonService";
 
 export function Main(): JSX.Element {
-    const persons: Person[] = personData;
-    const person = persons[0];
+    const params = useParams();
+    const _id = params._id;
+
+    const [fePerson, setFePerson] = useState<Person>();
+
+    useEffect(() => {
+        personService.getPersonById(_id)
+            .then(bePerson => setFePerson(bePerson))
+            .catch(err => console.log(err))
+    }, [])
+
+    console.log(fePerson);
+    
 
     return (
         <div className="Main">
-            <Home person={person} />
-            <LifeStory person={person} />
+            <Home person={fePerson} />
+            <LifeStory person={fePerson} />
             <Gallery />
             <Obituaries />
             <PrayOrder />

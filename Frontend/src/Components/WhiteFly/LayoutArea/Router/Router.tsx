@@ -10,7 +10,9 @@ export function Router(): JSX.Element {
         <div className="Router">
             <Routes>
                 <Route path={appConfig.HomeRoute} element={<Main />}></Route>
-                <Route path={appConfig.RememberRoute} element={<Remember />}></Route>
+                {/* <Route path={appConfig.RememberRoute} element={<Remember />}></Route> */}
+
+                <Route path={appConfig.RememberRoute + ":_id"} element={<Remember />}></Route>
 
                 {/* Default Routes */}
                 <Route path="/" element={<Navigate to={appConfig.HomeRoute} />} />

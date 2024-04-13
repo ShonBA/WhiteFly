@@ -4,7 +4,7 @@ import "./Home.scss";
 
 export function Home(props: PersonProps): JSX.Element {
     return (
-        <div className="RememberHome" style={{ backgroundImage: `url("${props.person.mainImageUrl}")` }}>
+        <div className="RememberHome" style={{ backgroundImage: `url("${props.person?.mainImageUrl}")` }}>
             <div className="homeHeaders">
                 <h2>{props.person?.firstName} {props.person?.secName} {props.person?.lastName}</h2>
                 <p className="firstP">חייה בן השנים {props.person?.birthYear} - {props.person?.deathYear}</p>
