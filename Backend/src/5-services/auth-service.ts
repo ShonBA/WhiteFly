@@ -24,7 +24,6 @@ class AuthService {
         const token = cyber.getNewToken(user);
         return token;
     }
-
 }
 
 const authService = new AuthService();

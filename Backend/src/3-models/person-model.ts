@@ -76,8 +76,6 @@ export const PersonSchema = new Schema<IPersonModel>({
     projects: [ProjectSchema]
 }, {
     versionKey: false,
-    toJSON: { virtuals: true },
-    id: false
 });
 
 export const PersonModel = model<IPersonModel>("PersonModel", PersonSchema, "persons")

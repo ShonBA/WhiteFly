@@ -42,7 +42,7 @@ export const UserSchema = new Schema<IUserModel>({
     role: {
         type: String,
         enum: ["Admin", "User"]
-    },
+    }
 }, {
     versionKey: false,
 });
