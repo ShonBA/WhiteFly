@@ -3,8 +3,8 @@ import { IPersonModel, PersonModel } from "../3-models/person-model";
 
 class PersonsService {
 
-    public getAllPersons(): Promise<IPersonModel[]> {
-        return PersonModel.find().exec();
+    public async getAllPersons(): Promise<IPersonModel[]> {
+        return await PersonModel.find().exec();
     }
 
     public async getPersonById(_id: string): Promise<IPersonModel> {
@@ -16,9 +16,8 @@ class PersonsService {
     public async addPerson(person: IPersonModel): Promise<IPersonModel> {
         const errors = person.validateSync();
         if (errors) throw new Validation(errors.message);
-        return person.save();
+        return await person.save();
     }
-
 }
 
 const personsService = new PersonsService();

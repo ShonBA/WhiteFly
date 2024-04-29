@@ -7,6 +7,7 @@ import dal from "./2-utils/dal";
 import catchAll from "./4-middleware/catch-all";
 import routeNotFound from "./4-middleware/route-not-found";
 import personController from "./6-controllers/persons-controller";
+import authController from "./6-controllers/auth-controller";
 
 const server = express();
 
@@ -14,7 +15,7 @@ server.use(cors());
 
 server.use(express.json());
 
-server.use("/api", personController);
+server.use("/api", personController, authController);
 
 server.use(routeNotFound);
 

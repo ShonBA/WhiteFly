@@ -1,9 +1,11 @@
+import { UploadedFile } from "express-fileupload";
 import { Schema } from "mongoose";
 
 export interface IProjectModel {
     title: string;
     description: string;
     imageUrl: string;
+    image: UploadedFile;
 }
 
 export const ProjectSchema = new Schema({

@@ -1,9 +1,11 @@
 import { Schema } from "mongoose";
+import { UploadedFile } from "express-fileupload";
 
 export interface ITimeLineModel {
     title: string;
     description: string;
     imageUrl: string;
+    image: UploadedFile;
 }
 
 export const TimeLineSchema = new Schema<ITimeLineModel>({
@@ -35,6 +37,7 @@ export const TimeLineSchema = new Schema<ITimeLineModel>({
 export interface ILifeStoryModel {
     story: string;
     storyImageUrl: string;
+    storyImage: UploadedFile;
     timeLines: ITimeLineModel[]
 }
 

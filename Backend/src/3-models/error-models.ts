@@ -11,8 +11,8 @@ export class RouteNotFound extends BaseError {
 }
 
 export class ResourceNotFound extends BaseError {
-    public constructor(_id: string) {
-        super(StatusCode.NotFound, `_id ${_id} not found.`);
+    public constructor(uuid: string) {
+        super(StatusCode.NotFound, `${uuid} not found.`);
     }
 }
 
@@ -22,3 +22,14 @@ export class Validation extends BaseError {
     }
 }
 
+export class Unauthorized extends BaseError {
+    public constructor(message: string) {
+        super(StatusCode.Unauthorized, message);
+    }
+}
+
+export class Forbidden extends BaseError {
+    public constructor(message: string) {
+        super(StatusCode.Forbidden, message);
+    }
+}

@@ -1,4 +1,5 @@
 import { Schema } from "mongoose";
+import { UploadedFile } from "express-fileupload";
 
 export interface IObituaryModel {
     header: string;
@@ -6,6 +7,7 @@ export interface IObituaryModel {
     relation: string;
     text: string;
     imageUrl: string;
+    image: UploadedFile;
 }
 
 export const ObituarySchema = new Schema({

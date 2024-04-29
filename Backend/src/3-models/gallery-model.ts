@@ -1,9 +1,12 @@
 import { Schema } from "mongoose";
+import { UploadedFile } from "express-fileupload";
 
 export interface IGalleryModel {
     albumImageUrl: string;
+    albumImage: UploadedFile;
     description: string;
-    images: string[];
+    imagesUrls: string[];
+    images: UploadedFile[];
 }
 
 export const GallerySchema = new Schema({

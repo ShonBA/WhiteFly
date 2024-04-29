@@ -31,8 +31,6 @@ router.get("/persons/:_id", async (request: Request, response: Response, next: N
 // POST http://localhost:4000/api/persons
 router.post("/persons", async (request: Request, response: Response, next: NextFunction) => {
     try {
-        console.log(request.body);
-        
         const person = new PersonModel(request.body);
         const addPerson = await personsService.addPerson(person);
         response.status(StatusCode.Created).json(addPerson);

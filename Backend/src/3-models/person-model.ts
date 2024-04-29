@@ -1,3 +1,4 @@
+import { UploadedFile } from "express-fileupload";
 import { Document, Schema, model } from "mongoose";
 import { GallerySchema, IGalleryModel } from "./gallery-model";
 import { ILifeStoryModel, LifeStoriesSchema } from "./lifeStory-model";
@@ -5,6 +6,7 @@ import { IObituaryModel, ObituarySchema } from "./obituary-model";
 import { IProjectModel, ProjectSchema } from "./project-model";
 
 export interface IPersonModel extends Document {
+    _id:string;
     firstName: string;
     secName: string;
     lastName: string;
@@ -12,6 +14,7 @@ export interface IPersonModel extends Document {
     deathYear: number;
     nextMemory: string;
     mainImageUrl: string;
+    mainImage: UploadedFile;
     pray: string;
     lifeStories: ILifeStoryModel[];
     gallery: IGalleryModel[];
